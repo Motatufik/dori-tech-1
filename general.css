@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('man.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+h1, p {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 100px;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+header .menu ul {
+  font-size: 13px;
+  list-style: none;
+  display: inline-flex;
+  gap: 20px;
+  font-weight: bold;
+}
+.hamburger {
+  display: none;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+
+.name {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+main {
+  padding: 100px  0px 0px 100px  ;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 p {
+  font-size: 1.5em;
+  color: white;
+  margin-top: 10px;
+}
+h1 p:last-child {
+  width: 340px;
+  border-right: solid 2px #fff;
+}
+
+.what-ido {
+  width: 50%;
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+button {
+  padding: 10px 25px;
+  border: solid 1px #fff;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+
+@media screen and (max-width: 500px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  .name {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  header .menu {
+    display: none;
+   
+  }
+  .hamburger {
+  display: block;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  }
+
+  .hamburger:hover .hamburger-menu {
+    opacity: 1;
+   
+  }
+
+  .hamburger-menu {
+    display: block;
+    padding: 0;
+    width: 100px;
+    border: solid rgb(226, 226, 226) 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    position: absolute;
+    right: -30px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+  }
+
+  .hamburger-menu ul {
+    font-size: 13px;
+    list-style: none;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .hamburger-menu ul li {
+    padding: 10px 0;
+    text-align: left;
+    border-bottom: solid 1px white;
+  }
+  .hamburger-menu ul li:last-child {
+    border-bottom: none;
+  }
+  .hamburger-menu ul li:hover {
+    font-size: 20px;
+  }
+
+  main {
+    padding: 70px 0 0 30px;
+    align-items: flex-start;
+  }
+
+  h1 p {
+    font-size: 35px;
+  }
+  h1 p:last-child {
+    width: 250px;
+    border-right: solid 2px #fff;
+  }
+
+  .what-ido {
+    width: 85%;
+  }
+  
+}
