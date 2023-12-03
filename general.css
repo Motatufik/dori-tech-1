@@ -47,7 +47,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100hv;
 }
 
 h1 p {
