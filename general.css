@@ -3,7 +3,6 @@ body {
   padding: 0;
   background-image: url('man.jpg');
   background-size: cover;
-  background-position: top;
   background-repeat: no-repeat;
   font-family: sans-serif;
 }
