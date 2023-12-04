@@ -34,6 +34,7 @@ header .menu ul li {
 
 header .menu ul li:hover {
   opacity: 0.5;
+  font-size: 18px;
 }
 .hamburger {
   display: none;
