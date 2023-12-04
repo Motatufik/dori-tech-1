@@ -29,8 +29,7 @@ header .menu ul {
 }
 
 header .menu ul li:hover {
-  padding: 10px;
-  opacity: 0.5;
+  font-size: 18px;
 }
 .hamburger {
   display: none;
