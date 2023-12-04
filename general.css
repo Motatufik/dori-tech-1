@@ -28,8 +28,12 @@ header .menu ul {
   font-weight: bold;
 }
 
+header .menu ul li {
+  padding: 10px;
+}
+
 header .menu ul li:hover {
-  font-size: 18px;
+  opacity: 0.5;
 }
 .hamburger {
   display: none;
